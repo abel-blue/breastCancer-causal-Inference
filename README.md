@@ -105,7 +105,7 @@ then
 
 ```bash
 git clone https://github.com/Abel-Blue/breastCancer-causal-Inference.git
-cd agriTech-USGS-LiDAR
+cd breastCancer-causal-Inference
 sudo python3 setup.py install
 ```
 
