@@ -97,8 +97,8 @@
 ### <a name='conda'></a>Conda Enviroment
 
 ```bash
-conda create --name mlenv python==3.8.1
-conda activate mlenv
+conda create --name causality python==3.8
+conda activate causality
 ```
 
 then
