@@ -32,3 +32,20 @@
 2022-06-30 21:39:30,817 : INFO : log : Plot a count plot.
 2022-06-30 21:58:47,182 : INFO : log : Plot a count plot.
 2022-06-30 21:58:47,182 : INFO : log : Plot a count plot.
+2022-06-30 23:44:44,768 : INFO : log : Showing data information
+2022-06-30 23:44:49,095 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 23:44:49,740 : INFO : log : Showing missing percentage
+2022-06-30 23:45:11,203 : INFO : log : Colums with missing values: []
+2022-06-30 23:45:12,743 : INFO : log : Showing datatypes
+2022-06-30 23:45:15,742 : INFO : log : Showing data description
+2022-06-30 23:45:17,416 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-06-30 23:45:29,954 : INFO : log : Plot a count plot.
+2022-06-30 23:45:29,954 : INFO : log : Plot a count plot.
+2022-06-30 23:50:19,751 : INFO : log : Plot a histogram.
+2022-06-30 23:50:19,751 : INFO : log : Plot a histogram.
+2022-06-30 23:52:02,994 : INFO : log : Plot a histogram.
+2022-06-30 23:52:02,994 : INFO : log : Plot a histogram.
+2022-06-30 23:52:12,445 : INFO : log : Plot a histogram.
+2022-06-30 23:52:12,445 : INFO : log : Plot a histogram.
+2022-06-30 23:52:16,997 : INFO : log : Plot a histogram.
+2022-06-30 23:52:16,997 : INFO : log : Plot a histogram.
