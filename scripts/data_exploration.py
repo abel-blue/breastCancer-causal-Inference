@@ -50,7 +50,7 @@ class exploration:
         plt.show()
         self.logger.info(f"Plot rectangular data as a color-encoded matrix and correlation matrix.")
 
-    def plot_scatter(df: pd.DataFrame, x_col: str, y_col: str, title: str, hue: str, style: str) -> None:
+    def plot_scatter(self, df: pd.DataFrame, x_col: str, y_col: str, title: str, hue: str, style: str) -> None:
         '''
         # scatter: Plot data as a scatter plot.
         # df: dataframe to be plotted
@@ -65,6 +65,7 @@ class exploration:
         plt.xticks(fontsize=14)
         plt.yticks(fontsize=14)
         plt.show()
+        self.logger.info(f"Plot data as a scatter plot.")
 
     def simple_plot_scatter(df: pd.DataFrame, x_col: str, y_col: str, title: str) -> None:
         '''
