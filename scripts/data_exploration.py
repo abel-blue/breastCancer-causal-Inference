@@ -9,7 +9,7 @@ sys.path.insert(0, '../logs/')
 sys.path.append(os.path.abspath(os.path.join('..')))
 from log import App_Logger
 
-app_logger = App_Logger("logs/data_exploration.log").get_app_logger()
+app_logger = App_Logger("../logs/data_exploration.log").get_app_logger()
 
 
 class exploration:
@@ -19,7 +19,7 @@ class exploration:
         # Initialize the class
         '''
         self.logger = App_Logger(
-            "logs/data_exploration.log").get_app_logger()
+            "../logs/data_exploration.log").get_app_logger()
         
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
         ''' 

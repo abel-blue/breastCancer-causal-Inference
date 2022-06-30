@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from log import App_Logger
 
-app_logger = App_Logger("logs/data_manipulator.log").get_app_logger()
+app_logger = App_Logger("../logs/data_manipulator.log").get_app_logger()
 
 
 class DataCleaner:
@@ -20,7 +20,7 @@ class DataCleaner:
         None
         """
         self.logger = App_Logger(
-            "logs/data_manipulator.log").get_app_logger()
+            "../logs/data_manipulator.log").get_app_logger()
         if(deep):
             self.df = df.copy(deep=True)
         else:
