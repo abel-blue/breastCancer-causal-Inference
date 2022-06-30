@@ -7,3 +7,6 @@
 2022-06-30 16:38:07,202 : INFO : log : Plot a box plot.
 2022-06-30 16:38:49,674 : INFO : log : Plot a box plot.
 2022-06-30 16:39:03,573 : INFO : log : Plot a box plot.
+2022-06-30 18:31:06,790 : INFO : log : Showing data information
+2022-06-30 18:31:11,385 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 18:31:12,183 : INFO : log : Showing missing percentage
