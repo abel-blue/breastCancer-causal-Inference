@@ -2,11 +2,26 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+import sys
+import os
+sys.path.insert(0, '../scripts/')
+sys.path.insert(0, '../logs/')
+sys.path.append(os.path.abspath(os.path.join('..')))
+from log import App_Logger
+
+app_logger = App_Logger("logs/data_exploration.log").get_app_logger()
 
 
 class exploration:
 
-    def plot_heatmap(df: pd.DataFrame, title: str, cbar=False) -> None:
+    def __init__(self) -> None:
+        '''
+        # Initialize the class
+        '''
+        self.logger = App_Logger(
+            "logs/data_exploration.log").get_app_logger()
+        
+    def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
         ''' 
         heatmap: Plot rectangular data as a color-encoded matrix.
         heatmap of the dataframe
@@ -20,6 +35,8 @@ class exploration:
                     vmax=1, fmt='.2f', linewidths=.7, cbar=cbar)
         plt.title(title, size=20, fontweight='bold')
         plt.show()
+        self.logger.info(f"Plot rectangular data as a color-encoded matrix\
+        of the dataframe")
 
     def plot_heatmap_from_correlation(correlation, title: str):
         '''
