@@ -1,0 +1,52 @@
+2022-06-30 15:39:27,340 : INFO : log : Showing data information
+2022-06-30 15:39:27,340 : INFO : log : Showing data information
+2022-06-30 15:41:05,500 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 15:41:05,500 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 15:43:42,842 : INFO : log : Showing missing percentage
+2022-06-30 15:43:42,842 : INFO : log : Showing missing percentage
+2022-06-30 16:02:21,585 : INFO : log : Colums with missing values: []
+2022-06-30 16:02:21,585 : INFO : log : Colums with missing values: []
+2022-06-30 16:22:31,200 : INFO : log : Showing datatypes
+2022-06-30 16:22:31,200 : INFO : log : Showing datatypes
+2022-06-30 16:37:33,607 : INFO : log : Plot a box plot.
+2022-06-30 16:37:33,607 : INFO : log : Plot a box plot.
+2022-06-30 16:38:07,202 : INFO : log : Plot a box plot.
+2022-06-30 16:38:07,202 : INFO : log : Plot a box plot.
+2022-06-30 16:38:49,674 : INFO : log : Plot a box plot.
+2022-06-30 16:38:49,674 : INFO : log : Plot a box plot.
+2022-06-30 16:39:03,573 : INFO : log : Plot a box plot.
+2022-06-30 16:39:03,573 : INFO : log : Plot a box plot.
+2022-06-30 18:31:06,790 : INFO : log : Showing data information
+2022-06-30 18:31:06,790 : INFO : log : Showing data information
+2022-06-30 18:31:06,790 : INFO : log : Showing data information
+2022-06-30 18:31:11,385 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 18:31:11,385 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 18:31:11,385 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 18:31:12,183 : INFO : log : Showing missing percentage
+2022-06-30 18:31:12,183 : INFO : log : Showing missing percentage
+2022-06-30 18:31:12,183 : INFO : log : Showing missing percentage
+2022-06-30 21:13:03,983 : INFO : log : Showing data description
+2022-06-30 21:13:03,983 : INFO : log : Showing data description
+2022-06-30 21:13:03,983 : INFO : log : Showing data description
+2022-06-30 21:14:10,273 : INFO : log : Showing data information
+2022-06-30 21:14:10,273 : INFO : log : Showing data information
+2022-06-30 21:14:21,443 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 21:14:21,443 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 21:14:36,051 : INFO : log : Showing missing percentage
+2022-06-30 21:14:36,051 : INFO : log : Showing missing percentage
+2022-06-30 21:14:47,000 : INFO : log : Colums with missing values: []
+2022-06-30 21:14:47,000 : INFO : log : Colums with missing values: []
+2022-06-30 21:14:49,049 : INFO : log : Showing datatypes
+2022-06-30 21:14:49,049 : INFO : log : Showing datatypes
+2022-06-30 21:14:52,206 : INFO : log : Showing data description
+2022-06-30 21:14:52,206 : INFO : log : Showing data description
+2022-06-30 21:15:47,616 : INFO : log : Showing data description
+2022-06-30 21:15:47,616 : INFO : log : Showing data description
+2022-06-30 21:17:07,865 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-06-30 21:17:07,865 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-06-30 21:18:24,390 : INFO : log : Showing correlation
+2022-06-30 21:18:24,390 : INFO : log : Showing correlation
+2022-06-30 21:39:30,817 : INFO : log : Plot a count plot.
+2022-06-30 21:39:30,817 : INFO : log : Plot a count plot.
+2022-06-30 21:58:47,182 : INFO : log : Plot a count plot.
+2022-06-30 21:58:47,182 : INFO : log : Plot a count plot.
