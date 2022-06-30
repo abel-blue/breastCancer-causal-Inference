@@ -67,7 +67,7 @@ class exploration:
         plt.show()
         self.logger.info(f"Plot data as a scatter plot.")
 
-    def simple_plot_scatter(df: pd.DataFrame, x_col: str, y_col: str, title: str) -> None:
+    def simple_plot_scatter(self, df: pd.DataFrame, x_col: str, y_col: str, title: str) -> None:
         '''
         df: dataframe to be plotted
         x_col: x-axis column
@@ -80,6 +80,7 @@ class exploration:
         plt.xticks(fontsize=14)
         plt.yticks(fontsize=14)
         plt.show()
+        self.logger.info(f"Plot a simple scatter plot.")
 
     def plot_hist(df: pd.DataFrame, column: str, color: str) -> None:
         '''
