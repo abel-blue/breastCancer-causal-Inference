@@ -17,3 +17,14 @@
 2022-06-30 18:31:11,385 : INFO : log : Colums with missing values: ['Unnamed: 32']
 2022-06-30 18:31:12,183 : INFO : log : Showing missing percentage
 2022-06-30 18:31:12,183 : INFO : log : Showing missing percentage
+2022-06-30 21:13:03,983 : INFO : log : Showing data description
+2022-06-30 21:13:03,983 : INFO : log : Showing data description
+2022-06-30 21:14:10,273 : INFO : log : Showing data information
+2022-06-30 21:14:21,443 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 21:14:36,051 : INFO : log : Showing missing percentage
+2022-06-30 21:14:47,000 : INFO : log : Colums with missing values: []
+2022-06-30 21:14:49,049 : INFO : log : Showing datatypes
+2022-06-30 21:14:52,206 : INFO : log : Showing data description
+2022-06-30 21:15:47,616 : INFO : log : Showing data description
+2022-06-30 21:17:07,865 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-06-30 21:18:24,390 : INFO : log : Showing correlation
