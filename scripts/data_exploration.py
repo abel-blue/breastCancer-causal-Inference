@@ -116,7 +116,7 @@ class exploration:
         self.logger.info(f"Plot a bar chart.")
 
 
-    def plot_box(df: pd.DataFrame, x_col: str, title: str) -> None:
+    def plot_box(self, df: pd.DataFrame, x_col: str, title: str) -> None:
         '''
         # box: Plot a box plot.
         # df: dataframe to be plotted
@@ -128,8 +128,10 @@ class exploration:
         plt.title(title, size=20)
         plt.xticks(rotation=75, fontsize=14)
         plt.show()
+        self.logger.info(f"Plot a box plot.")
 
-    def plot_box_multi(df: pd.DataFrame, x_col: str, y_col: str, title: str) -> None:
+
+    def plot_box_multi(self, df: pd.DataFrame, x_col: str, y_col: str, title: str) -> None:
         '''
         # box_multi: Plot a box plot.
         # df: dataframe to be plotted
@@ -143,8 +145,10 @@ class exploration:
         plt.xticks(rotation=75, fontsize=14)
         plt.yticks(fontsize=14)
         plt.show()
+        self.logger.info(f"Plot a box plot.")
 
-    def plot_count(df: pd.DataFrame, column: str) -> None:
+
+    def plot_count(self, df: pd.DataFrame, column: str) -> None:
         '''
         # count: Plot a count plot.
         # df: dataframe to be plotted
@@ -154,3 +158,5 @@ class exploration:
         sns.countplot(data=df, x=column)
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.show()
+        self.logger.info(f"Plot a count plot.")
+
