@@ -1,0 +1,5 @@
+2022-06-30 15:39:27,340 : INFO : log : Showing data information
+2022-06-30 15:41:05,500 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-06-30 15:43:42,842 : INFO : log : Showing missing percentage
+2022-06-30 16:02:21,585 : INFO : log : Colums with missing values: []
+2022-06-30 16:22:31,200 : INFO : log : Showing datatypes
