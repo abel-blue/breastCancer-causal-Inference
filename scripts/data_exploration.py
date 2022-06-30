@@ -82,7 +82,7 @@ class exploration:
         plt.show()
         self.logger.info(f"Plot a simple scatter plot.")
 
-    def plot_hist(df: pd.DataFrame, column: str, color: str) -> None:
+    def plot_hist(self, df: pd.DataFrame, column: str, color: str) -> None:
         '''
         # hist: Plot a histogram.
         # df: dataframe to be plotted
@@ -93,8 +93,9 @@ class exploration:
                     kde=True, height=7, aspect=2)
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.show()
+        self.logger.info(f"Plot a histogram.")
 
-    def plot_bar(df: pd.DataFrame, x_col: str, y_col: str, title: str, xlabel: str, ylabel: str) -> None:
+    def plot_bar(self, df: pd.DataFrame, x_col: str, y_col: str, title: str, xlabel: str, ylabel: str) -> None:
         '''
         # bar: Plot a bar chart.
         # df: dataframe to be plotted
@@ -112,6 +113,8 @@ class exploration:
         plt.xlabel(xlabel, fontsize=16)
         plt.ylabel(ylabel, fontsize=16)
         plt.show()
+        self.logger.info(f"Plot a bar chart.")
+
 
     def plot_box(df: pd.DataFrame, x_col: str, title: str) -> None:
         '''
