@@ -38,7 +38,7 @@ class exploration:
         self.logger.info(f"Plot rectangular data as a color-encoded matrix\
         of the dataframe")
 
-    def plot_heatmap_from_correlation(correlation, title: str):
+    def plot_heatmap_from_correlation(self, correlation, title: str):
         '''
         heatmap: Plot rectangular data as a color-encoded matrix and correlation matrix.
         title: Title of the plot
@@ -48,6 +48,7 @@ class exploration:
         sns.heatmap(correlation)
         plt.title(title, size=18, fontweight='bold')
         plt.show()
+        self.logger.info(f"Plot rectangular data as a color-encoded matrix and correlation matrix.")
 
     def plot_scatter(df: pd.DataFrame, x_col: str, y_col: str, title: str, hue: str, style: str) -> None:
         '''
