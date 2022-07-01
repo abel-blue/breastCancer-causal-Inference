@@ -1,4 +1,5 @@
 
+from log import App_Logger
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -7,7 +8,6 @@ import os
 sys.path.insert(0, '../scripts/')
 sys.path.insert(0, '../logs/')
 sys.path.append(os.path.abspath(os.path.join('..')))
-from log import App_Logger
 
 app_logger = App_Logger("../logs/data_exploration.log").get_app_logger()
 
@@ -20,7 +20,7 @@ class exploration:
         '''
         self.logger = App_Logger(
             "../logs/data_exploration.log").get_app_logger()
-        
+
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
         ''' 
         heatmap: Plot rectangular data as a color-encoded matrix.
@@ -48,7 +48,8 @@ class exploration:
         sns.heatmap(correlation)
         plt.title(title, size=18, fontweight='bold')
         plt.show()
-        self.logger.info(f"Plot rectangular data as a color-encoded matrix and correlation matrix.")
+        self.logger.info(
+            f"Plot rectangular data as a color-encoded matrix and correlation matrix.")
 
     def plot_scatter(self, df: pd.DataFrame, x_col: str, y_col: str, title: str, hue: str, style: str) -> None:
         '''
@@ -115,7 +116,6 @@ class exploration:
         plt.show()
         self.logger.info(f"Plot a bar chart.")
 
-
     def plot_box(self, df: pd.DataFrame, x_col: str, title: str) -> None:
         '''
         # box: Plot a box plot.
@@ -129,7 +129,6 @@ class exploration:
         plt.xticks(rotation=75, fontsize=14)
         plt.show()
         self.logger.info(f"Plot a box plot.")
-
 
     def plot_box_multi(self, df: pd.DataFrame, x_col: str, y_col: str, title: str) -> None:
         '''
@@ -147,16 +146,15 @@ class exploration:
         plt.show()
         self.logger.info(f"Plot a box plot.")
 
-
     def plot_count(self, df: pd.DataFrame, column: str) -> None:
         '''
         # count: Plot a count plot.
         # df: dataframe to be plotted
         # column: column to be plotted
+
         '''
         plt.figure(figsize=(12, 7))
         sns.countplot(data=df, x=column)
         plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.show()
         self.logger.info(f"Plot a count plot.")
-
