@@ -373,20 +373,4 @@ class DataCleaner:
         except:
             print('Failed to optimize')
 
-    def save_clean_data(self, name: str):
-        """
-        The objects dataframe gets saved with the specified name 
-        Parameters
-        ----------
-        name:
-            Type: str
-
-        Returns
-        -------
-        None
-        """
-        try:
-            self.df.to_csv(name, index=False)
-            self.logger.info(f"DataFrame saved")
-        except:
-            print("Failed to save data")
+    
