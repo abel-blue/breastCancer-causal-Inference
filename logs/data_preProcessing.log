@@ -314,3 +314,36 @@
 2022-07-01 04:27:37,053 : INFO : log : Outlier for symmetry_worst is fixed
 2022-07-01 04:27:37,058 : INFO : log : Outlier for fractal_dimension_worst is fixed
 2022-07-01 04:27:37,058 : INFO : log : Outlier for fractal_dimension_worst is fixed
+2022-07-01 04:56:00,533 : INFO : log : Colums with missing values: ['floats']
+2022-07-01 04:56:00,533 : INFO : log : Colums with missing values: ['floats']
+2022-07-01 04:56:00,533 : INFO : log : Colums with missing values: ['floats']
+2022-07-01 04:56:00,538 : INFO : log : Converted to numbers
+2022-07-01 04:56:00,538 : INFO : log : Converted to numbers
+2022-07-01 04:56:00,538 : INFO : log : Converted to numbers
+2022-07-01 04:56:00,538 : INFO : log : Converted to numbers
+2022-07-01 04:56:00,540 : INFO : log : Showing coloumn names
+2022-07-01 04:56:00,540 : INFO : log : Showing coloumn names
+2022-07-01 04:56:00,540 : INFO : log : Showing coloumn names
+2022-07-01 04:56:00,540 : INFO : log : Showing coloumn names
+2022-07-01 04:56:00,540 : INFO : log : Showing coloumn names
+2022-07-01 04:56:00,566 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-07-01 04:56:00,566 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-07-01 04:56:00,566 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-07-01 04:56:00,566 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-07-01 04:56:00,566 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-07-01 04:56:00,566 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-07-01 04:56:00,568 : INFO : log : Showing data information
+2022-07-01 04:56:00,568 : INFO : log : Showing data information
+2022-07-01 04:56:00,568 : INFO : log : Showing data information
+2022-07-01 04:56:00,568 : INFO : log : Showing data information
+2022-07-01 04:56:00,568 : INFO : log : Showing data information
+2022-07-01 04:56:00,568 : INFO : log : Showing data information
+2022-07-01 04:56:00,568 : INFO : log : Showing data information
+2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
+2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
+2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
+2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
+2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
+2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
+2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
+2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
