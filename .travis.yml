@@ -1,0 +1,27 @@
+# Config file for automatic testing at travis-ci.com
+language: python
+
+python:
+  - "3.8"
+
+# # blocklist
+# branches:
+#   except:
+#   - legacy
+#   - experimental
+
+# safelist
+branches:
+  only:
+    - main
+    - unit-test
+
+# Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
+install:
+  - pip install -r requirements.txt
+# cache installation
+cache:
+  - pip
+# Command to run tests, e.g. python setup.py test
+script:
+  - python -m unittest tests.test
