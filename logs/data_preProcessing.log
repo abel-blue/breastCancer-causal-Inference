@@ -347,3 +347,13 @@
 2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
 2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
 2022-07-01 04:56:00,621 : INFO : log : Showing datatypes
+2022-07-02 15:55:30,832 : INFO : log : Showing data information
+2022-07-02 15:55:30,832 : INFO : log : Showing data information
+2022-07-02 16:00:30,918 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-07-02 16:00:30,918 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-07-02 16:00:43,771 : INFO : log : Showing missing percentage
+2022-07-02 16:00:43,771 : INFO : log : Showing missing percentage
+2022-07-02 16:03:29,466 : INFO : log : Colums with missing values: []
+2022-07-02 16:03:29,466 : INFO : log : Colums with missing values: []
+2022-07-02 16:03:43,036 : INFO : log : Colums with missing values: []
+2022-07-02 16:03:43,036 : INFO : log : Colums with missing values: []
