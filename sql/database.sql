@@ -1,0 +1,30 @@
+CREATE TABLE IF NOT EXISTS `TB` 
+(
+    'radius_mean': 'INT NOT NULL',
+    'texture_mean': 'INT NOT NULL',
+    'perimeter_mean': 'DATETIME NOT NULL',
+    'area_mean': 'FLOAT NOT NULL',
+    'smoothness_mean': 'INT DEFAULT NULL',
+    'compactness_mean': 'INT DEFAULT NULL',
+    'concavity_mean': 'INT DEFAULT NULL',
+    'concave points_mean': 'INT DEFAULT NULL',
+    'symmetry_mean': 'INT DEFAULT NULL',
+    'fractal_dimension_mean': 'VARCHAR(10) DEFAULT NULL',
+    'radius_se': 'FLOAT DEFAULT NULL',
+    'texture_se': 'INT DEFAULT NULL',
+    'perimeter_se': 'INT DEFAULT NULL',
+    'area_se': 'INT DEFAULT NULL',
+    'smoothness_se': 'INT DEFAULT NULL',
+    'compactness_se': 'INT DEFAULT NULL',
+    'concavity_se': 'VARCHAR(40) DEFAULT NULL',
+    'concave points_se': 'VARCHAR(40) DEFAULT NULL',
+    'symmetry_se': 'VARCHAR(40) DEFAULT NULL',
+    'fractal_dimension_se': 'VARCHAR(40) DEFAULT NULL',
+    'radius_worst': 'VARCHAR(40) DEFAULT NULL',
+    'texture_worst': 'VARCHAR(40) DEFAULT NULL',
+    'perimeter_worst': 'VARCHAR(40) DEFAULT NULL',
+    'area_worst': 'VARCHAR(40) DEFAULT NULL',
+    'smoothness_worst': 'VARCHAR(40) DEFAULT NULL',
+    PRIMARY KEY (`Store`)
+)
+ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
