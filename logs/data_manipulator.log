@@ -610,3 +610,5 @@
 2022-07-02 16:03:29,466 : INFO : log : Colums with missing values: []
 2022-07-02 16:03:43,036 : INFO : log : Colums with missing values: []
 2022-07-02 16:16:15,946 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-07-02 16:19:16,824 : INFO : log : Showing data description
+2022-07-02 16:19:59,590 : INFO : log : Showing datatypes
