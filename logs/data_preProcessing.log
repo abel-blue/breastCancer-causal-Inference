@@ -663,3 +663,17 @@
 2022-07-02 20:51:10,731 : INFO : log : Showing datatypes
 2022-07-02 20:51:18,978 : INFO : log : Outlier for ['radius_mean', 'texture_mean', 'perimeter_mean', 'area_mean', 'smoothness_mean', 'compactness_mean', 'concavity_mean', 'concave points_mean', 'symmetry_mean', 'fractal_dimension_mean', 'radius_se', 'texture_se', 'perimeter_se', 'area_se', 'smoothness_se', 'compactness_se', 'concavity_se', 'concave points_se', 'symmetry_se', 'fractal_dimension_se', 'radius_worst', 'texture_worst', 'perimeter_worst', 'area_worst', 'smoothness_worst', 'compactness_worst', 'concavity_worst', 'concave points_worst', 'symmetry_worst', 'fractal_dimension_worst'] is fixed
 2022-07-02 20:51:18,978 : INFO : log : Outlier for ['radius_mean', 'texture_mean', 'perimeter_mean', 'area_mean', 'smoothness_mean', 'compactness_mean', 'concavity_mean', 'concave points_mean', 'symmetry_mean', 'fractal_dimension_mean', 'radius_se', 'texture_se', 'perimeter_se', 'area_se', 'smoothness_se', 'compactness_se', 'concavity_se', 'concave points_se', 'symmetry_se', 'fractal_dimension_se', 'radius_worst', 'texture_worst', 'perimeter_worst', 'area_worst', 'smoothness_worst', 'compactness_worst', 'concavity_worst', 'concave points_worst', 'symmetry_worst', 'fractal_dimension_worst'] is fixed
+2022-07-02 21:18:04,049 : INFO : log : Showing data information
+2022-07-02 21:18:04,049 : INFO : log : Showing data information
+2022-07-02 21:18:07,484 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-07-02 21:18:07,484 : INFO : log : Colums with missing values: ['Unnamed: 32']
+2022-07-02 21:18:09,234 : INFO : log : Colums with missing values: []
+2022-07-02 21:18:09,234 : INFO : log : Colums with missing values: []
+2022-07-02 21:18:10,560 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-07-02 21:18:10,560 : INFO : log : Dropped duplicates: Int64Index([], dtype='int64')
+2022-07-02 21:18:11,223 : INFO : log : Showing data description
+2022-07-02 21:18:11,223 : INFO : log : Showing data description
+2022-07-02 21:18:12,081 : INFO : log : Showing datatypes
+2022-07-02 21:18:12,081 : INFO : log : Showing datatypes
+2022-07-02 21:18:20,369 : INFO : log : Outlier for ['radius_mean', 'texture_mean', 'perimeter_mean', 'area_mean', 'smoothness_mean', 'compactness_mean', 'concavity_mean', 'concave points_mean', 'symmetry_mean', 'fractal_dimension_mean', 'radius_se', 'texture_se', 'perimeter_se', 'area_se', 'smoothness_se', 'compactness_se', 'concavity_se', 'concave points_se', 'symmetry_se', 'fractal_dimension_se', 'radius_worst', 'texture_worst', 'perimeter_worst', 'area_worst', 'smoothness_worst', 'compactness_worst', 'concavity_worst', 'concave points_worst', 'symmetry_worst', 'fractal_dimension_worst'] is fixed
+2022-07-02 21:18:20,369 : INFO : log : Outlier for ['radius_mean', 'texture_mean', 'perimeter_mean', 'area_mean', 'smoothness_mean', 'compactness_mean', 'concavity_mean', 'concave points_mean', 'symmetry_mean', 'fractal_dimension_mean', 'radius_se', 'texture_se', 'perimeter_se', 'area_se', 'smoothness_se', 'compactness_se', 'concavity_se', 'concave points_se', 'symmetry_se', 'fractal_dimension_se', 'radius_worst', 'texture_worst', 'perimeter_worst', 'area_worst', 'smoothness_worst', 'compactness_worst', 'concavity_worst', 'concave points_worst', 'symmetry_worst', 'fractal_dimension_worst'] is fixed
