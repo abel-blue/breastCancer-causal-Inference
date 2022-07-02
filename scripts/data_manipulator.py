@@ -1,6 +1,7 @@
 from xxlimited import Str
 import pandas as pd
 import numpy as np
+from sklearn.preprocessing import Normalizer, StandardScaler
 from log import App_Logger
 
 app_logger = App_Logger("../logs/data_manipulator.log").get_app_logger()
@@ -342,4 +343,65 @@ class DataCleaner:
         except:
             print('standardization failed')
         return self.df
+    
+    
+    def standardize_column(self, column: str) -> pd.DataFrame:
+        """
+            Returns the objects DataFrames column normalized using Normalizer
+            Parameters
+            ----------
+            column:
+                Type: str
+            length:
+                Type: int
+            Returns
+            -------
+            pd.DataFrame
+        """
+        try:
+            std_column_df = pd.DataFrame(self.df[column])
+            std_column_values = std_column_df.values
+            standardizer = StandardScaler()
+            normalized_data = standardizer.fit_transform(std_column_values)
+            self.df[column] = normalized_data
+
+            return self.df
+        except:
+            print("Failed to standardize the column")
+    
+    def standardize_columns(self, columns: list) -> pd.DataFrame:
+        try:
+            for col in columns:
+                self.df = self.standardize_column(col)
+            return self.df
+        except:
+            print(f"Failed to standardize {col} column")
+            
+    def normalizer(self, df: pd.DataFrame, columns: list) -> pd.DataFrame:
+        return (self.df - df.mean()) / (df.std())
+    def normalize_column(self, column: list) -> pd.DataFrame:
+        """
+            Returns the objects DataFrames column normalized using Normalizer
+            Parameters
+            ----------
+            column:
+                Type: str
+            length:
+                Type: int
+            Returns
+            -------
+            pd.DataFrame
+        """
+        try:
+            scale_column_df = pd.DataFrame(self.df[column])
+            scale_column_values = scale_column_df.values
+            normalizer = Normalizer()
+            normalized_data = normalizer.fit_transform(scale_column_values)
+            self.df[column] = normalized_data
+
+            return self.df
+
+        except:
+            print("Failed to normalize the column")
+
 
