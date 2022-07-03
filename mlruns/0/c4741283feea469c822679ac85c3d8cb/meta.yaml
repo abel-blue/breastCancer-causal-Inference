@@ -1,0 +1,15 @@
+artifact_uri: file:///home/abel-ubuntu/workspace/breastCancer-causal-Inference/mlruns/0/c4741283feea469c822679ac85c3d8cb/artifacts
+end_time: 1656888810681
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: c4741283feea469c822679ac85c3d8cb
+run_uuid: c4741283feea469c822679ac85c3d8cb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1656888781735
+status: 3
+tags: []
+user_id: abel-ubuntu
