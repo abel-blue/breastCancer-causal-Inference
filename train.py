@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import ElasticNet
+from sklearn.linear_model import ElasticNet, LogisticRegression
 from urllib.parse import urlparse
 import mlflow
 import mlflow.sklearn
@@ -63,7 +63,8 @@ if __name__ == "__main__":
     with mlflow.start_run():
 
         # Random Forest model
-        lr = RandomForestRegressor(max_depth=10, random_state=42)
+        # lr = RandomForestRegressor(max_depth=10, random_state=42)
+        lr = LogisticRegression(random_state=0)
         lr.fit(train_x, train_y)
 
         # predicted values
