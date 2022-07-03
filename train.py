@@ -51,10 +51,11 @@ if __name__ == "__main__":
 
     # separate the independent and target variable
     # The predicted column is "quality" which is a scalar from [3, 9]
-    train_x = train.drop(['Customers', 'Sales', 'SalesPerCustomer'], axis=1)
-    test_x = test.drop(['Customers', 'Sales', 'SalesPerCustomer'], axis=1)
-    train_y = train[['Sales']]
-    test_y = test[['Sales']]
+    
+    train_x = train.drop(['diagnosis'], axis=1)
+    test_x = test.drop(['diagnosis'], axis=1)
+    train_y = train[['diagnosis']]
+    test_y = test[['diagnosis']]
 
     alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
     l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
