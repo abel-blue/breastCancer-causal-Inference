@@ -14,6 +14,8 @@ import dvc.api
 from datetime import datetime
 import logging
 
+from sklearn.tree import DecisionTreeClassifier
+
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
@@ -34,10 +36,10 @@ if __name__ == "__main__":
 
     # Importing the collected Data from dvc
     # tag version is v5-scaled-normalized
-    path = 'data/scaled_data.csv'
-    repo = 'https://github.com/Abel-Blue/breastCancer-causal-Inference'
-    rev = 'v5-scaled-normalized'
-    data_url = dvc.api.get_url(path=path, repo=repo, rev=rev)
+    # path = 'data/scaled_data.csv'
+    # repo = 'https://github.com/Abel-Blue/breastCancer-causal-Inference'
+    # rev = 'v5-scaled-normalized'
+    # data_url = dvc.api.get_url(path=path, repo=repo, rev=rev)
 
     try:
         scaled = pd.read_csv("data/scaled_data.csv")
@@ -64,7 +66,7 @@ if __name__ == "__main__":
 
         # Random Forest model
         # lr = RandomForestRegressor(max_depth=10, random_state=42)
-        lr = LogisticRegression(random_state=0)
+        lr = DecisionTreeClassifier()
         lr.fit(train_x, train_y)
 
         # predicted values
