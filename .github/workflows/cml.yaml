@@ -30,4 +30,7 @@ jobs:
           # Post reports as comments in GitHub PRs
           cat results.txt >> report.md
           cml publish images/decisionTree_confusion_matrix.png --md >> report.md
+          cml publish images/random_forest_confusion_matrix.png --md >> report.md
+          cml publish images/logistic_regression_confusion_matrix.png --md >> report.md
+          
           cml send-comment report.md
