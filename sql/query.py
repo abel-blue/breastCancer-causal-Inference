@@ -30,7 +30,7 @@ def createDB(dbName: str) -> None:
 
 def createTables(dbName: str) -> None:
     conn, cur = DBConnect(dbName)
-    sqlFile = 'mysql/database.sql'
+    sqlFile = 'sql/database.sql'
     fd = open(sqlFile, 'r')
     readSqlFile = fd.read()
     fd.close()
@@ -51,10 +51,10 @@ def insert_to_tweet_table(dbName: str, df: pd.DataFrame, table_name: str) -> Non
     conn, cur = DBConnect(dbName)
     for _, row in df.iterrows():
 
-        sqlQuery = f"""INSERT INTO {table_name} (radius_mean,texture_mean,perimeter_mean,area_mean,smoothness_mean,compactness_mean,concavity_mean,concave points_mean,symmetry_mean,fractal_dimension_mean,radius_se,texture_se,perimeter_se,area_se,smoothness_se,compactness_se,concavity_se,concave points_se,symmetry_se,fractal_dimension_se,radius_worst,texture_worst,perimeter_worst,area_worst,smoothness_worst,compactness_worst,concavity_worst,concave points_worst,symmetry_worst,fractal_dimension_worst)
+        sqlQuery = f"""INSERT INTO {table_name} (radius_mean,texture_mean,perimeter_mean,area_mean,smoothness_mean,compactness_mean,concavity_mean,concave points_mean,symmetry_mean,fractal_dimension_mean,area_se,smoothness_se,compactness_se,concavity_se,concave points_se,fractal_dimension_se,radius_worst,texture_worst,diagnosis)
         VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"""
 
-        data = (row[0], row[1], row[2], row[3])
+        data = (row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[9], row[10], row[11], row[12], row[13], row[14], row[15], row[16], row[17], row[18], row[19], row[20])
 
         try:
             cur.execute(sqlQuery, data)
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     createDB(dbName='score_db')
     emojiDB(dbName='score_db')
     createTables(dbName='score_db')
-    df = pd.read_csv('../data/train_store.csv')
+    df = pd.read_csv('../data/data.csv')
     df.info()
     insert_to_tweet_table(dbName='score_db', df=df,
                           table_name='TB')
