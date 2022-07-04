@@ -26,7 +26,7 @@
 
 ## Table of Contents
 
-1. [Introduction](##Introduction)
+1. [Introduction](#Introduction)
 2. [Project Structure](#project-structure)
    - [data](#data)
    - [notebooks](#notebooks)
