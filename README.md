@@ -1,7 +1,6 @@
-#
-
 <h1 align="center">Breast Cancer diagnosis with Causal Inference</h1>
 <div>
+<img src="https://img.shields.io/badge/OS-linux%20%7C%20windows-blue??style=flat&logo=Linux&logoColor=b0c0c0&labelColor=363D44" alt="Operating systems"/>
 <a href="https://github.com/Abel-Blue/breastCancer-causal-Inference/network/members"><img src="https://img.shields.io/github/forks/Abel-Blue/agriTech-USGS-LiDAR" alt="Forks Badge"/></a>
 <a href="https://github.com/Abel-Blue/agriTech-USGS-LiDAR/pulls"><img src="https://img.shields.io/github/issues-pr/Abel-Blue/breastCancer-causal-Inference" alt="Pull Requests Badge"/></a>
 <a href="https://github.com/Abel-Blue/breastCancer-causal-Inference/issues"><img src="https://img.shields.io/github/issues/Abel-Blue/breastCancer-causal-Inference" alt="Issues Badge"/></a>
@@ -11,7 +10,7 @@
 
 </br>
 
-![lidar-heatmap](https://www.inovex.de/wp-content/uploads/2020/03/Causal-Inference-Hero.png)
+![causal-image](https://www.inovex.de/wp-content/uploads/2020/03/Causal-Inference-Hero.png)
 
 <!-- ## Presentation Slide
 
@@ -27,22 +26,63 @@
 
 ## Table of Contents
 
-- [Introduction](##Introduction)
-- [Project Structure](#project-structure)
-  - [data](#data)
-  - [notebooks](#notebooks)
-  - [scripts](#scripts)
-  - [tests](#tests)
-  - [logs](#logs)
-  - [root folder](#root-folder)
-- [Installation guide](#installation-guide)
+1. [Introduction](##Introduction)
+2. [Project Structure](#project-structure)
+   - [data](#data)
+   - [notebooks](#notebooks)
+   - [scripts](#scripts)
+   - [tests](#tests)
+   - [logs](#logs)
+   - [root folder](#root-folder)
+3. [Installation guide](#installation-guide)
 
 <hr>
 
 ## Introduction
 
 > <p>Causal inference is an important link between the practice of cancer epidemiology and effective cancer prevention.</p>
-> <p></p>
+
+ <p>The causal graph is a central object in the framework mentioned above, but it is often unknown, subject to personal knowledge and bias, or loosely connected to the available data. The main objective of the task is to highlight the importance of the matter in a concrete way. In this spirit, trainees are expected to attempt the following tasks:
+</p>
+
+1. Perform a causal inference task using Pearl’s framework;
+2. Infer the causal graph from observational data and then validate the graph;
+3. Merge machine learning with causal inference;
+4. Use the resulting graph to predict the outcome of a disease;
+
+The first is straightforward, the second and third are still open questions in the research community, hence may need a bit more research, innovation, and thinking outside the box from trainees.
+
+> <b>Data Features:</b>
+>
+> <p>
+> Features in the data are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.
+
+<b>Attribute Information</b>:
+
+- ID number
+- Diagnosis (M = malignant, B = benign)
+
+<b>The remaining (3-32)</b>
+
+Ten real-valued features are computed for each cell nucleus:
+
+- radius (mean of distances from center to points on the perimeter)
+- texture (standard deviation of gray-scale values)
+- Perimeter
+- Area
+- smoothness (local variation in radius lengths)
+- compactness (perimeter^2 / area - 1.0)
+- concavity (severity of concave portions of the contour)
+- concave points (number of concave portions of the contour)
+- Symmetry
+- fractal dimension ("coastline approximation" - 1)
+
+The mean, standard error and "worst" or largest (mean of the three largest values) of these features were computed for each image, resulting in 30 features. For instance, field 3 is Mean Radius, field 13 is Radius SE, field 23 is Worst Radius. All feature values are recorded with four significant digits.
+
+> Missing attribute values: none
+> Class distribution: 357 benign (not cancer), 212 malignant (cancer)
+
+</p>
 
 <hr>
 
@@ -83,11 +123,13 @@
 
 - `tests/`: the folder containing unit tests for the scripts.
 
-### root folder
+### [root folder](/)
 
-- `requirements.txt`: a text file lsiting the projet's dependancies.
-- `.travis.yml`: a configuration file for Travis CI for unit test.
+- `requirements.txt`: a text file listing the projet's dependancies.
+- `.travis.yml`: a configuration file Travis CI for unit test.
 - `setup.py`: a configuration file for installing the scripts as a package.
+- `results.txt`: a text file containing the results of the cml report.
+- `train.py`: a script for training the model.
 - `README.md`: Markdown text with a brief explanation of the project and the repository structure.
 
 <hr>
@@ -101,7 +143,7 @@ conda create --name causality python==3.8
 conda activate causality
 ```
 
-then
+### Next
 
 ```bash
 git clone https://github.com/Abel-Blue/breastCancer-causal-Inference.git
@@ -113,4 +155,4 @@ sudo python3 setup.py install
 
 # <a name='license'></a>License
 
-[MIT](https://github.com/Abel-Blue/breastCancer-causal-Inference/blob/main/LICENSE)
+[MIT-License](https://github.com/Abel-Blue/breastCancer-causal-Inference/blob/main/LICENSE)
