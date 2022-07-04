@@ -106,6 +106,8 @@ The mean, standard error and "worst" or largest (mean of the three largest value
 ### [.github](.github):
 
 - `.github/`: the folder where github actions and unit-tests are integrated.
+- `cml.yaml`: the file where the cml configuration is stored.
+- `unit_test.yml`: the file where the unit-tests are stored.
 
 ### [.vscode](.vscode):
 
@@ -113,17 +115,26 @@ The mean, standard error and "worst" or largest (mean of the three largest value
 
 ### [notebooks](notebooks):
 
-- `notebooks`: a jupyter notebook for preprocessing the data.
+- `notebooks/`: a jupyter notebook for preprocessing the data.
+- `data_exploration.ipynb`: a jupyter notebook for data exploration.
+- `ml_preprocess.ipynb`: a jupyter notebook for preprocessing the data.
+- `causal_inference.ipynb`: a jupyter notebook for causal inference feature extraction.
+- `ml_model.ipynb`: a jupyter notebook for machine learning model training.
 
 ### [scripts](scripts):
 
 - `scripts/`: folder where modules are stored.
+- `causality.py`: a module for causal inference.
+- `data_manipulation.py`: a module for data manipulation.
+- `data_exploration.py`: a module for data exploration.
+- `data_preProcessing.py`: a module for data preprocessing.
 
 ### [tests](tests):
 
 - `tests/`: the folder containing unit tests for the scripts.
+- `test.py`: the file containing unit tests for the scripts.
 
-### [root folder](/)
+### [root folder](#)
 
 - `requirements.txt`: a text file listing the projet's dependancies.
 - `.travis.yml`: a configuration file Travis CI for unit test.
